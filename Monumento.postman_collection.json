@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7dd533bf-84ae-49db-950b-40a7ae46a6a4",
+		"name": "Monumento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38748105"
+	},
+	"item": [
+		{
+			"name": "Crear Monumento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codPais\": \"ESP\",\r\n    \"nombrePais\": \"España\",\r\n    \"nombreCiudad\": \"Madrid\",\r\n    \"latitud\": 40.416775,\r\n    \"longitud\": -3.703790,\r\n    \"nombreMonumento\": \"Palacio Real\",\r\n    \"descripcion\": \"El Palacio Real es la residencia oficial de los Reyes de España.\",\r\n    \"imagen\": \"https://example.com/imagen_palacio_real.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/m/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"m",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Monumento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/m/buscar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"m",
+						"buscar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Monumento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombreMonumento\": \"España1\",\r\n    \"nombreCiudad\": \"Madrid1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/m/editar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"m",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Monumento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/m/eliminar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"m",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

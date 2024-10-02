@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/api/monumentos")
+@RequestMapping("/api/m")
 @RequiredArgsConstructor
 public class MonumentoController {
 
